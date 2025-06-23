@@ -118,16 +118,117 @@ Ponieważ nie da się już pobrać ISAAC SIM bezpośrednio przy użyciu Omnivers
     \item Wersja: Isaac Sim 4.5.0
 \end{itemize}
 
-Po pobraniu rozpakowaliśmy plik i możliwe było już uruchomienie środowiska ISAAC SIM. Można to zrobić, wchodząc do katalogu w którym umieszczone zostały rozpakowane pliki i wpisując ./isaac-sim.sh lub alternatywnie isaac-sim.selector.sh.
+Po pobraniu rozpakowaliśmy plik i możliwe było już uruchomienie środowiska ISAAC SIM. Można to zrobić, wchodząc do katalogu, w którym umieszczone zostały rozpakowane pliki i wpisując ./isaac-sim.sh lub alternatywnie isaac-sim.selector.sh.
 
  
 
 \subsection{Instalacja środowiska ROS2}
 
+Źródłem wykonanej instalacji była oficjalna dokumentacja ROS 2 dla wersji Humble (Ubuntu Development Setup):
 
+ https://docs.ros.org/en/humble/Installation/Alternatives/Ubuntu-Development-Setup.html
+
+
+\subsubsection{Krok 1: Konfiguracja lokalizacji UTF-8}
+Na początku upewniliśmy się, że system ma skonfigurowane środowisko lokalizacyjne obsługujące UTF-8.
+
+
+\texttt{sudo locale-gen en\_US en\_US.UTF-8}
+
+\texttt{sudo update-locale LC\_ALL=en\_US.UTF-8 LANG=en\_US.UTF-8}
+
+\texttt{export LANG=en\_US.UTF-8}
+
+Sprawdziliśmy, czy ustawienia lokalne są prawidłowe:
+
+\texttt{locale}
+
+\subsubsection{Krok 2: Instalacja zależności systemowych}
+Zainstalowaliśmy wymagane pakiety narzędziowe i kompilacyjne:
+
+\texttt{sudo apt update \&\& sudo apt install -y}
+
+
+\texttt{build-essential cmake git wget curl}
+
+
+\texttt{gnupg lsb-release python3-colcon-common-extensions}
+
+
+\texttt{python3-pip python3-vcstool python3-rosdep}
+\\
+
+Zainicjowaliśmy narzędzie rosdep:
+
+\texttt{sudo rosdep init}
+
+
+\texttt{rosdep update}
+
+
+\subsubsection{Krok 3: Utworzenie przestrzeni roboczej i pobranie kodu ROS 2}
+
+Stworzyliśmy katalog roboczy i pobraliśmy plik repozytoriów:
+
+
+\texttt{mkdir -p $\sim$/ros2\_humble/src}
+
+\texttt{cd $\sim$/ros2\_humble}
+
+\texttt{wget https://raw.githubusercontent.com/ros2/ros2/humble/ros2.repos}
+
+\texttt{vcs import src < ros2.repos}
+
+\subsubsection{Krok 4: Instalacja zależności pakietów ROS 2}
+
+Zainstalowaliśmy wszystkie zależności wymagane do kompilacji (pomijając rti-connext, którego nie potrzebujemy).
+
+
+\texttt{rosdep install --from-paths src --ignore-src -r -y}
+
+\texttt{--skip-keys "fastcdr rti-connext-dds-6.0.1 urdfdom\_headers}
+
+
+\subsubsection{Krok 5: Kompilacja ROS 2}
+
+Rozpoczęliśmy kompilację całego środowiska z wykorzystaniem colcon:
+
+\texttt{cd $\sim$/ros2\_humble}
+
+\texttt{colcon build --symlink-install}
+
+Ten proces trwał kilkanaście minut.
+
+
+\subsubsection{Krok 6: Konfiguracja środowiska}
+
+Po zakończeniu kompilacji dodaliśmy ROS 2 do zmiennych środowiskowych:
+
+\texttt{echo "source $\sim$/ros2\_humble/install/setup.bash" $>>$ $\sim$/.bashrc}
+
+\texttt{source $\sim$/.bashrc}
+
+Dzięki temu komenda ros2 była dostępna z każdego terminala.
+
+\subsubsection{Weryfikacja działania ros2 }
+
+Przeprowadziliśmy podstawowy test komunikacji między dwoma węzłami:
+
+Terminal 1:
+
+\texttt{ros2 run demo\_nodes\_cpp talker}
+
+
+Terminal 2:
+
+\texttt{ros2 run demo\_nodes\_cpp listener}
+\\
+Terminal listener poprawnie odbierał wiadomości wysyłane przez talker, co potwierdziło, że środowisko działa.
+
+\newpage
 \section{Cyfrowy bliźniak robota Unitree Go2}
 
-W środowisku ISSAC SIM znajduję się gotowy model cyfrowego bliźniaka robota Unitree Go2, w celu umieszczenia go na scenie otwartego programu należy odnaleźć go w oknie Isaac Sim Assets i dodać go wciskając przycisk Load as Reference lub przeciągając jego ikonę na scenę. Widok okna Isaac Sim Assets przedstawiony jest na rysunku \ref{fig:Assets}. Widok umieszczonego w symulacji robota przedstawiony jest na rysunku \ref{fig:cyfrowyBlizniak}. Na rysunku \ref{fig:groundPlane} pokazane jest jak dodać podłogę w scenie, należy wybrać w górnym pasku Create, następnie Physics,  a na końcu wcisnąć Ground Plane.  
+W środowisku ISSAC SIM znajduje się gotowy model cyfrowego bliźniaka robota Unitree Go2, w celu umieszczenia go na scenie otwartego programu należy odnaleźć go w oknie Isaac Sim Assets i dodać go, wciskając przycisk Load as Reference lub przeciągając jego ikonę na scenę. Widok okna Isaac Sim Assets przedstawiony jest na rysunku \ref{fig:Assets}. Widok umieszczonego w symulacji robota przedstawiony jest na rysunku \ref{fig:cyfrowyBlizniak}. Na rysunku \ref{fig:groundPlane} pokazane jest, jak dodać podłogę w scenie, należy wybrać w górnym pasku Create, następnie Physics,  a na końcu wcisnąć Ground Plane.  
 
 \begin{figure}[h]
     \centering
@@ -199,14 +300,14 @@ Blok ROS2Subscriber służy do otrzymywania danych z programu środowiska ROS2, 
     \label{fig:subscriberROS2}
 \end{figure}
 
-W celu uruchomienia programu sterującego, po wcześniejszym wypakowaniu potrzebnych plików,  należy przejść do folderu $/qudruped_robot_ROS2$ i w terminalu wpisać (żeby uruchomić terminal w danym folderze należy będąc w aplikacji pliki w danym folderze wcisnąć prawy przycisk myszy i ‘otwórz w terminalu’):
+W celu uruchomienia programu sterującego, po wcześniejszym wypakowaniu potrzebnych plików,  należy przejść do folderu $/quadruped\_robot\_ROS2$ i w terminalu wpisać (żeby uruchomić terminal w danym folderze należy będąc w aplikacji pliki w danym folderze wcisnąć prawy przycisk myszy i ‘otwórz w terminalu’):
 
 $colcon\; build$
 
 Następnie w nowym terminalu wpisać:
 
 
-$source quadruped\_robot\_ROS2/install/setup.bash$
+$source\; quadruped\_robot\_ROS2/install/setup.bash$
 
 $ros2\; launch robot\_control\; robot\_control.launch.py$
 
@@ -241,7 +342,7 @@ Do wykonania tej części projektu korzystaliśmy z poniższego filmu.
 
 \section{Przykładowe symulacje}
 
-W środowisku ISAAC SIM dostępnych jest wiele przykładowych symulacji do, których można uzyskać dostęp wybierając w górnym pasku Window, następnie Examples, a na końcu Robotics Examples, pokazane jest to na rysunku \ref{fig:symulacje}.
+W środowisku ISAAC SIM dostępnych jest wiele przykładowych symulacji do, których można uzyskać dostęp, wybierając w górnym pasku Window, następnie Examples, a na końcu Robotics Examples, pokazane jest to na rysunku \ref{fig:symulacje}.
 W dolnej części programu otwiera się zakładka Robotics Examples, w której znajdują się różnorodne przykłady umożliwiające sterowanie robotami przy pomocy klawiatury. W dalszej części zaprezentowano wybrane przykłady.
 
 
