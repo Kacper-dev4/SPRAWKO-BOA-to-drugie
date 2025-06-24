@@ -237,7 +237,7 @@ W środowisku ISSAC SIM znajduje się gotowy model cyfrowego bliźniaka robota U
     \label{fig:Assets}
 \end{figure}
 
-\clearpage
+
 
 \begin{figure}[h]
     \centering
@@ -441,7 +441,7 @@ Na rysunku \ref{fig:bostonDyna} przedstawiony jest widok na cyfrowego bliźniaka
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\linewidth]{Zdjęcia/przykladBoston.png}
-    \caption{Enter Caption}
+    \caption{Przykład z ISAAC SIM z robotem Boston Dynamics.}
     \label{fig:bostonDyna}
 \end{figure}
 
@@ -456,9 +456,43 @@ W środowisku ISAAC SIM dostępny jest też przykład z manipulatorem układają
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\linewidth]{Zdjęcia/przykladowaPaletyzacja.png}
+    \includegraphics[width=0.7\linewidth]{Zdjęcia/przykladowaPaletyzacja.png}
     \caption{Przykład z ISAAC SIM z manipulatorem i paletami.}
     \label{fig:palety}
 \end{figure}
+
+Na rysunku \ref{IMU} przedstawiony jest przykład z czujnikiem IMU gdzie możliwe jest poruszanie obiektem i obserwowanie zmian wartości zwracanych przez czujnik IMU.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Zdjęcia/czujnikIMU.png}
+    \caption{Przykład z ISAAC SIM z czujnikiem IMU.}
+    \label{IMU}
+\end{figure}
+
+\clearpage
+
+\section{Podsumowanie osiągniętych celów projektu}
+
+W trakcie wykonywania projektu udało się wykonać wszystkie narzucone odgórnie cele narzucone w nim. Czyli:
+\begin{itemize}
+    \item Zainstalowano środowisko ISAAC SIM
+    \item Skonfigurowano środowisko tak, żeby możliwa była jego komunikacja z ROS2
+    \item W symulacji został przygotowany cyfrowy bliźniak robota Unitree Go2
+    \item Nawiązano połączenie między środowiskiem ISAAC SIM oraz ROS2
+    \item Cyfrowy bliźniak robota Unitree Go2 był sterowany w środowisku ISAAC SIM przy użyciu ROS2
+    \item Przeprowadzono sterowanie robotem kołowym z użyciem ROS2 w symulacji ISAAC SIM
+    \item Testowano przykładowe symulacje znajdujące się w ISAAC SIM między innymi sterowanie robotem humanoidalnym i robotem czworonożnym przy pomocy klawiatury oraz przykład symulacji z ramieniem robota ustawiającym palety 
+    
+\end{itemize}
+
+\section{Propozycje dalszego rozwoju}
+
+Do propozycji dalszego rozwoju należą:
+\begin{itemize}
+    \item Poprawa algorytmu sterującego cyforwym bliźniakiem robota Unitree Go2 lub napisanie całego algorytmu od nowa
+    \item Sterowanie cyfrowym bliźniakiem innego robota przy pomocy ROS2
+    \item Stworzenie własnego modelu URDF robota i sterowanie nim w środowisku ISAAC SIM   
+\end{itemize}
 
 \end{document}
