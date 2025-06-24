@@ -262,7 +262,7 @@ Wszystkie potrzebne pliki źródłowe do sterowania sterowania robotem znajdują
 https://drive.google.com/drive/folders/1fdtBgbXUCxln3wdQgWUAGIBdBf-2Qv9z
 \vspace{10pt}
 
-Żeby możliwe było sterowanie robotem Unitree Go2 przy pomocy środowiska ROS2, wymagane jest dodanie do projektu specjalnego grafu z instrukcjami w formie bloków (Action Graph).Na rysunku \ref{fig:jakDodacAction} pokazane jest jak dodać Action Graph, a rysunku \ref{fig:actionGraph} widoczne są potrzebne do sterowania robotem bloki oraz połączenia między nimi. 
+Żeby możliwe było sterowanie robotem Unitree Go2 przy pomocy środowiska ROS2, wymagane jest dodanie do projektu specjalnego grafu z instrukcjami w formie bloków (Action Graph).Na rysunku \ref{fig:jakDodacAction} pokazane jest jak dodać Action Graph, na rysunku \ref{fig:actionGraph} widoczne są potrzebne do sterowania robotem bloki oraz połączenia między nimi. 
 
 \begin{figure}[h]
     \centering
@@ -340,6 +340,87 @@ Do wykonania tej części projektu korzystaliśmy z poniższego filmu.
 
 \clearpage
 
+\section{Jazda robotem kołowym z użyciem ROS2 i teleop\_twist\_keyboard}
+
+Pakiet teleop\_twist\_keyboard umożliwia ręczne sterowanie robotem mobilnym w systemie ROS2 z użyciem klawiatury. Wysyła komunikaty typu geometry\_msgs/msg/Twist na zadany temat (domyślnie /cmd\_vel). Pozwala sterować prędkością liniową oraz kątową- co jest typowym sposobem poruszania się robotów mobilnych (np. typu differential drive).
+
+\texttt{Klawisze sterujące}
+
+\texttt{Podstawowe sterowanie odbywa się z użyciem następujących klawiszy:}
+
+\texttt{Klawisz  Działanie}
+
+\texttt{i  Do przodu}
+
+\texttt{k  Zatrzymanie(zerowanie prędkości)}
+
+\texttt{,  Do tyłu}
+
+\texttt{j  Skręt w lewo(obrót w miejscu)}
+
+\texttt{l  Skręt w prawo(obrót w miejscu)}
+
+\texttt{u Do przodu + w lewo}
+
+\texttt{o  Do przodu + w prawo}
+
+\texttt{m  Do tyłu + w lewo}
+
+\texttt{.  Do tyłu + w prawo}
+
+\texttt{Zmiana prędkości:}
+
+\texttt{Klawisz  Działanie}
+
+\texttt{q  Zwiększ prędkość liniową i kątową}
+
+\texttt{z  Zmniejsz prędkość liniową i kątową}
+
+\texttt{w  Zwiększ tylko prędkość liniową}
+
+\texttt{x  Zmniejsz tylko prędkość liniową}
+
+\texttt{e  Zwiększ tylko prędkość kątową}
+
+\texttt{c  Zmniejsz tylko prędkość kątową}
+
+Każde wciśnięcie odpowiedniego klawisza powoduje wysłanie wiadomości Twist na zadany temat, zgodnie z bieżącymi wartościami prędkości.
+
+\texttt{Instalacja pakietu}
+
+\texttt{a) instalacja binarna zalecana}
+
+\texttt{sudo apt update}
+
+\texttt{sudo apt install ros-humble-teleop-twist-keyboard}
+
+\texttt{b) Instalacja ze źródła}
+
+\texttt{cd $\sim$/ros2\_ws/src}
+
+\texttt{git clone https://github.com/ros2/teleop\_twist\_keyboard.git}
+
+\texttt{cd ..}
+
+\texttt{colcon build}
+
+\texttt{source install/setup.bash}
+
+\texttt{Uruchomienie}
+
+\texttt{ros2 run teleop\_twist\_keyboard teleop\_twist\_keyboard}
+
+Do testów wykorzystano gotowy przykład robota mobilnego dostępny w środowisku Isaac Sim 4.5.0, który został przygotowany do współpracy z systemem ROS2. Przykład ten zawiera wstępnie skonfigurowany zestaw węzłów (nodes) ROS2, które umożliwiają komunikację pomiędzy symulowanym robotem, a zewnętrznym środowiskiem ROS 2.
+
+Robot ten subskrybuje wiadomości typu geometry\_msgs/msg/Twist, publikowane na temacie /cmd\_vel, który jest domyślnym kanałem komunikacyjnym wykorzystywanym przez pakiet teleop\_twist\_keyboard. Oznacza to, że po uruchomieniu symulacji oraz włączeniu mostu ROS 2, komendy wysyłane z klawiatury mogą bezpośrednio sterować ruchem robota w symulacji.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Zdjęcia/robocikRos2.png}
+    \caption{Robot kołowy w symulacji ISAAC SIM.}
+    \label{fig:robotKolowy}
+\end{figure}
+
 \section{Przykładowe symulacje}
 
 W środowisku ISAAC SIM dostępnych jest wiele przykładowych symulacji do, których można uzyskać dostęp, wybierając w górnym pasku Window, następnie Examples, a na końcu Robotics Examples, pokazane jest to na rysunku \ref{fig:symulacje}.
@@ -349,7 +430,7 @@ W dolnej części programu otwiera się zakładka Robotics Examples, w której z
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\linewidth]{Zdjęcia/oknoZPrzykladami.png}
+    \includegraphics[width=0.8\linewidth]{Zdjęcia/oknoZPrzykladami.png}
     \caption{Okno do dodawania dostępnych w ISAAC SIM przykładowych symulacji.}
     \label{fig:symulacje}
 \end{figure}
@@ -359,7 +440,7 @@ Na rysunku \ref{fig:bostonDyna} przedstawiony jest widok na cyfrowego bliźniaka
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\linewidth]{Zdjęcia/przykladBoston.png}
+    \includegraphics[width=0.8\linewidth]{Zdjęcia/przykladBoston.png}
     \caption{Enter Caption}
     \label{fig:bostonDyna}
 \end{figure}
