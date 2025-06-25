@@ -1,0 +1,31 @@
+\contentsline {section}{\numberline {1}Cel projektu}{3}{section.1}%
+\contentsline {section}{\numberline {2}Wstęp teoretyczny}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Czym jest symulator fizyki?}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Na czym polega idea cyfrowego bliźniaka?}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Środowisko ISAAC SIM 4.5.0}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Jak można sterować symulowanym obiektem?}{7}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Środowisko ROS2}{7}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Czym jest robot mobilny?}{7}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Typy robotów mobilnych}{7}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Unitree Go2 EDU}{8}{subsection.2.8}%
+\contentsline {section}{\numberline {3}Instalacja i konfiguracja środowiska ISSAC SIM oraz ROS2 Humble}{11}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Wykorzystany sprzęt}{11}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Test możliwości sprzętowych i systemowych}{11}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Instalacja środowiska ISAAC SIM}{11}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Instalacja środowiska ROS2}{12}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Krok 1: Konfiguracja lokalizacji UTF-8}{12}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Krok 2: Instalacja zależności systemowych}{12}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Krok 3: Utworzenie przestrzeni roboczej i pobranie kodu ROS 2}{12}{subsubsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.4}Krok 4: Instalacja zależności pakietów ROS 2}{12}{subsubsection.3.4.4}%
+\contentsline {subsubsection}{\numberline {3.4.5}Krok 5: Kompilacja ROS 2}{13}{subsubsection.3.4.5}%
+\contentsline {subsubsection}{\numberline {3.4.6}Krok 6: Konfiguracja środowiska}{13}{subsubsection.3.4.6}%
+\contentsline {subsubsection}{\numberline {3.4.7}Weryfikacja działania ROS2 }{13}{subsubsection.3.4.7}%
+\contentsline {section}{\numberline {4}Jazda robotem kołowym z użyciem ROS2 i teleop\_twist\_keyboard}{14}{section.4}%
+\contentsline {section}{\numberline {5}Cyfrowy bliźniak robota Unitree Go2}{15}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Podejście od strony opisywanej w dokumentacji producenta}{15}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Wykorzystanie modelu z ISAAC SIM}{15}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Sterowania robotem Unitree Go2 przy pomocy środowiska ROS2}{17}{section.6}%
+\contentsline {section}{\numberline {7}Napotkane problemy}{22}{section.7}%
+\contentsline {section}{\numberline {8}Przykładowe symulacje}{22}{section.8}%
+\contentsline {section}{\numberline {9}Podsumowanie osiągniętych celów projektu}{26}{section.9}%
+\contentsline {section}{\numberline {10}Propozycje dalszego rozwoju}{26}{section.10}%

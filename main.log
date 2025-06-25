@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.19)  25 JUN 2025 20:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.19)  25 JUN 2025 22:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -398,7 +398,7 @@ Package hyperref Info: Link coloring OFF on input line 59.
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-<Zdjęcia/Polsl.png, id=87, 447.92343pt x 150.5625pt>
+<Zdjęcia/Polsl.png, id=127, 447.92343pt x 150.5625pt>
 File: Zdjęcia/Polsl.png Graphic file (type png)
 <use Zdjęcia/Polsl.png>
 Package pdftex.def Info: Zdjęcia/Polsl.png  used on input line 62.
@@ -414,188 +414,346 @@ LaTeX Warning: No \author given.
 [1
 
 {C:/Users/pc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Zdjęcia/Pols
-l.png>]
-<Zdjęcia/widokISAACSIM.png, id=100, 1856.9375pt x 1056.94875pt>
-File: Zdjęcia/widokISAACSIM.png Graphic file (type png)
-<use Zdjęcia/widokISAACSIM.png>
-Package pdftex.def Info: Zdjęcia/widokISAACSIM.png  used on input line 97.
-(pdftex.def)             Requested size: 418.04213pt x 237.94835pt.
- [2 <./Zdjęcia/widokISAACSIM.png>] [3
+l.png>] (main.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 3.
+)
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+
+ []
+
+
+Overfull \hbox (10.65733pt too wide) in paragraph at lines 95--96
+\T1/cmr/m/n/12 Istotnym etapem prac by�o po��cze-nie �rodowiska ROS 2 z Isaac S
+im. Dz-i�ki dost�p-nej in-te-gracji i  dedykowanym
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
+[3
 
 ]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 160.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 160.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 160.
- [4]
-<Zdjęcia/prawdziwyPies.jpg, id=120, 7981.82pt x 5323.89pt>
-File: Zdjęcia/prawdziwyPies.jpg Graphic file (type jpg)
-<use Zdjęcia/prawdziwyPies.jpg>
-Package pdftex.def Info: Zdjęcia/prawdziwyPies.jpg  used on input line 197.
-(pdftex.def)             Requested size: 418.04213pt x 278.80167pt.
+Overfull \hbox (9.7426pt too wide) in paragraph at lines 131--133
+\T1/cmr/m/n/12 urz�dzenia, przeprowadza� ekspery-menty fizy-czne, a tak�e bada�
+ efek-ty-wno�� r�nych tech-nologii w  wirtu-
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+
+ []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
-[5] [6 <./Zdjęcia/prawdziwyPies.jpg>]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-32.
+ []
 
-(C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
-Underfull \hbox (badness 10000) in paragraph at lines 254--256
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
+
+ []
+
+<Zdjęcia/widokISAACSIM.png, id=192, 1856.9375pt x 1056.94875pt>
+File: Zdjęcia/widokISAACSIM.png Graphic file (type png)
+<use Zdjęcia/widokISAACSIM.png>
+Package pdftex.def Info: Zdjęcia/widokISAACSIM.png  used on input line 160.
+(pdftex.def)             Requested size: 418.04213pt x 237.94835pt.
+[6
+
+ <./Zdjęcia/widokISAACSIM.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
 [7
 
-] [8]
-<Zdjęcia/bibliotekaAssets.png, id=144, 1297.84875pt x 321.2pt>
-File: Zdjęcia/bibliotekaAssets.png Graphic file (type png)
-<use Zdjęcia/bibliotekaAssets.png>
-Package pdftex.def Info: Zdjęcia/bibliotekaAssets.png  used on input line 331.
+]
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
-(pdftex.def)             Requested size: 418.04213pt x 103.45755pt.
-<Zdjęcia/cyfrowyBlizniakUnitryGo2.png, id=145, 843.15pt x 476.78125pt>
-File: Zdjęcia/cyfrowyBlizniakUnitryGo2.png Graphic file (type png)
-<use Zdjęcia/cyfrowyBlizniakUnitryGo2.png>
-Package pdftex.def Info: Zdjęcia/cyfrowyBlizniakUnitryGo2.png  used on input l
-ine 340.
-(pdftex.def)             Requested size: 418.04213pt x 236.39665pt.
-<Zdjęcia/groundPlane.png, id=146, 1297.84875pt x 736.7525pt>
-File: Zdjęcia/groundPlane.png Graphic file (type png)
-<use Zdjęcia/groundPlane.png>
-Package pdftex.def Info: Zdjęcia/groundPlane.png  used on input line 347.
-(pdftex.def)             Requested size: 501.64716pt x 284.76917pt.
+ []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
-[9 <./Zdjęcia/bibliotekaAssets.png> <./Zdjęcia/cyfrowyBlizniakUnitryGo2.png>]
-[10 <./Zdjęcia/groundPlane.png>]
-<Zdjęcia/dodanieActionGraph.png, id=163, 563.10374pt x 488.82625pt>
-File: Zdjęcia/dodanieActionGraph.png Graphic file (type png)
-<use Zdjęcia/dodanieActionGraph.png>
-Package pdftex.def Info: Zdjęcia/dodanieActionGraph.png  used on input line 36
-5.
-(pdftex.def)             Requested size: 390.17094pt x 338.70766pt.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
+
+ []
+
+[8] [9]
+<Zdjęcia/prawdziwyPies.jpg, id=213, 7981.82pt x 5323.89pt>
+File: Zdjęcia/prawdziwyPies.jpg Graphic file (type jpg)
+<use Zdjęcia/prawdziwyPies.jpg>
+Package pdftex.def Info: Zdjęcia/prawdziwyPies.jpg  used on input line 274.
+(pdftex.def)             Requested size: 418.04213pt x 278.80167pt.
+ [10 <./Zdjęcia/prawdziwyPies.jpg>]
+<Zdjęcia/sprawdzeniSprzetu.png, id=220, 493.845pt x 530.98375pt>
+File: Zdjęcia/sprawdzeniSprzetu.png Graphic file (type png)
+<use Zdjęcia/sprawdzeniSprzetu.png>
+Package pdftex.def Info: Zdjęcia/sprawdzeniSprzetu.png  used on input line 293
+.
+(pdftex.def)             Requested size: 278.69475pt x 299.64987pt.
  [11
 
- <./Zdjęcia/dodanieActionGraph.png>]
-<Zdjęcia/actionGraph.png, id=171, 1856.9375pt x 1056.94875pt>
-File: Zdjęcia/actionGraph.png Graphic file (type png)
-<use Zdjęcia/actionGraph.png>
-Package pdftex.def Info: Zdjęcia/actionGraph.png  used on input line 374.
-(pdftex.def)             Requested size: 418.04213pt x 237.94835pt.
-<Zdjęcia/ustawieniaMakeArray.png, id=174, 560.0925pt x 516.93124pt>
-File: Zdjęcia/ustawieniaMakeArray.png Graphic file (type png)
-<use Zdjęcia/ustawieniaMakeArray.png>
-Package pdftex.def Info: Zdjęcia/ustawieniaMakeArray.png  used on input line 3
-85.
-(pdftex.def)             Requested size: 278.69475pt x 257.22661pt.
+ <./Zdjęcia/sprawdzeniSprzetu.png>]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
+22.
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+Underfull \hbox (badness 10000) in paragraph at lines 344--346
 
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Zdjęcia/kolejnoscJointow.png, id=175, 586.19pt x 568.1225pt>
-File: Zdjęcia/kolejnoscJointow.png Graphic file (type png)
-<use Zdjęcia/kolejnoscJointow.png>
-Package pdftex.def Info: Zdjęcia/kolejnoscJointow.png  used on input line 392.
-
-(pdftex.def)             Requested size: 278.69475pt x 270.10371pt.
-<Zdjęcia/ustawieniaROS2Subsciber.png, id=177, 558.085pt x 524.96124pt>
-File: Zdjęcia/ustawieniaROS2Subsciber.png Graphic file (type png)
-<use Zdjęcia/ustawieniaROS2Subsciber.png>
-Package pdftex.def Info: Zdjęcia/ustawieniaROS2Subsciber.png  used on input li
-ne 401.
-(pdftex.def)             Requested size: 278.69475pt x 262.15956pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Zdjęcia/pochyleniePrzod.png, id=180, 1729.46124pt x 838.13126pt>
-File: Zdjęcia/pochyleniePrzod.png Graphic file (type png)
-<use Zdjęcia/pochyleniePrzod.png>
-Package pdftex.def Info: Zdjęcia/pochyleniePrzod.png  used on input line 430.
-(pdftex.def)             Requested size: 445.9133pt x 216.09297pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Zdjęcia/pochylenieTyl.png, id=181, 1729.46124pt x 838.13126pt>
-File: Zdjęcia/pochylenieTyl.png Graphic file (type png)
-<use Zdjęcia/pochylenieTyl.png>
-Package pdftex.def Info: Zdjęcia/pochylenieTyl.png  used on input line 437.
-(pdftex.def)             Requested size: 445.9133pt x 216.09297pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[12
-
- <./Zdjęcia/actionGraph.png>] [13 <./Zdjęcia/ustawieniaMakeArray.png> <./Zdj�
-�cia/kolejnoscJointow.png>] [14 <./Zdjęcia/ustawieniaROS2Subsciber.png> <./Zdj
-ęcia/pochyleniePrzod.png>] [15 <./Zdjęcia/pochylenieTyl.png>]
-Overfull \hbox (6.70018pt too wide) in paragraph at lines 448--448
+[12] [13]
+Overfull \hbox (6.70018pt too wide) in paragraph at lines 417--417
 []\T1/cmr/bx/n/17.28 Jazda robotem ko�owym z u�y-ciem ROS2 i teleop_twist_keybo
 ard 
  []
 
-<Zdjęcia/robocikRos2.png, id=212, 844.65562pt x 475.02469pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
+
+ []
+
+[14]
+<Zdjęcia/robocikRos2.png, id=242, 844.65562pt x 475.02469pt>
 File: Zdjęcia/robocikRos2.png Graphic file (type png)
 <use Zdjęcia/robocikRos2.png>
-Package pdftex.def Info: Zdjęcia/robocikRos2.png  used on input line 524.
+Package pdftex.def Info: Zdjęcia/robocikRos2.png  used on input line 493.
 (pdftex.def)             Requested size: 278.69475pt x 156.73688pt.
-[16
+<Zdjęcia/bibliotekaAssets.png, id=246, 1297.84875pt x 321.2pt>
+File: Zdjęcia/bibliotekaAssets.png Graphic file (type png)
+<use Zdjęcia/bibliotekaAssets.png>
+Package pdftex.def Info: Zdjęcia/bibliotekaAssets.png  used on input line 508.
 
-]
-<Zdjęcia/oknoZPrzykladami.png, id=218, 1856.9375pt x 1056.94875pt>
-File: Zdjęcia/oknoZPrzykladami.png Graphic file (type png)
-<use Zdjęcia/oknoZPrzykladami.png>
-Package pdftex.def Info: Zdjęcia/oknoZPrzykladami.png  used on input line 538.
-
-(pdftex.def)             Requested size: 445.9133pt x 253.8019pt.
- [17 <./Zdjęcia/robocikRos2.png> <./Zdjęcia/oknoZPrzykladami.png>]
-<Zdjęcia/przykladBoston.png, id=229, 673.51625pt x 369.38pt>
-File: Zdjęcia/przykladBoston.png Graphic file (type png)
-<use Zdjęcia/przykladBoston.png>
-Package pdftex.def Info: Zdjęcia/przykladBoston.png  used on input line 573.
-(pdftex.def)             Requested size: 445.9133pt x 244.55807pt.
-<Zdjęcia/przykladHumanoid.png, id=230, 469.755pt x 438.63875pt>
-File: Zdjęcia/przykladHumanoid.png Graphic file (type png)
-<use Zdjęcia/przykladHumanoid.png>
-Package pdftex.def Info: Zdjęcia/przykladHumanoid.png  used on input line 580.
-
-(pdftex.def)             Requested size: 278.69475pt x 260.23363pt.
+(pdftex.def)             Requested size: 418.04213pt x 103.45755pt.
+<Zdjęcia/cyfrowyBlizniakUnitryGo2.png, id=247, 843.15pt x 476.78125pt>
+File: Zdjęcia/cyfrowyBlizniakUnitryGo2.png Graphic file (type png)
+<use Zdjęcia/cyfrowyBlizniakUnitryGo2.png>
+Package pdftex.def Info: Zdjęcia/cyfrowyBlizniakUnitryGo2.png  used on input l
+ine 517.
+(pdftex.def)             Requested size: 418.04213pt x 236.39665pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Zdjęcia/przykladowaPaletyzacja.png, id=232, 1313.90875pt x 713.66624pt>
+<Zdjęcia/groundPlane.png, id=248, 1297.84875pt x 736.7525pt>
+File: Zdjęcia/groundPlane.png Graphic file (type png)
+<use Zdjęcia/groundPlane.png>
+Package pdftex.def Info: Zdjęcia/groundPlane.png  used on input line 524.
+(pdftex.def)             Requested size: 501.64716pt x 284.76917pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15 <./Zdjęcia/robocikRos2.png> <./Zdjęcia/bibliotekaAssets.png>] [16 <./Zdj�
+�cia/cyfrowyBlizniakUnitryGo2.png> <./Zdjęcia/groundPlane.png>]
+<Zdjęcia/dodanieActionGraph.png, id=267, 563.10374pt x 488.82625pt>
+File: Zdjęcia/dodanieActionGraph.png Graphic file (type png)
+<use Zdjęcia/dodanieActionGraph.png>
+Package pdftex.def Info: Zdjęcia/dodanieActionGraph.png  used on input line 54
+2.
+(pdftex.def)             Requested size: 390.17094pt x 338.70766pt.
+ [17
+
+ <./Zdjęcia/dodanieActionGraph.png>]
+<Zdjęcia/actionGraph.png, id=275, 1856.9375pt x 1056.94875pt>
+File: Zdjęcia/actionGraph.png Graphic file (type png)
+<use Zdjęcia/actionGraph.png>
+Package pdftex.def Info: Zdjęcia/actionGraph.png  used on input line 551.
+(pdftex.def)             Requested size: 418.04213pt x 237.94835pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 557--558
+
+ []
+
+<Zdjęcia/ustawieniaMakeArray.png, id=278, 560.0925pt x 516.93124pt>
+File: Zdjęcia/ustawieniaMakeArray.png Graphic file (type png)
+<use Zdjęcia/ustawieniaMakeArray.png>
+Package pdftex.def Info: Zdjęcia/ustawieniaMakeArray.png  used on input line 5
+62.
+(pdftex.def)             Requested size: 278.69475pt x 257.22661pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Zdjęcia/kolejnoscJointow.png, id=279, 586.19pt x 568.1225pt>
+File: Zdjęcia/kolejnoscJointow.png Graphic file (type png)
+<use Zdjęcia/kolejnoscJointow.png>
+Package pdftex.def Info: Zdjęcia/kolejnoscJointow.png  used on input line 569.
+
+(pdftex.def)             Requested size: 278.69475pt x 270.10371pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 574--575
+
+ []
+
+<Zdjęcia/ustawieniaROS2Subsciber.png, id=281, 558.085pt x 524.96124pt>
+File: Zdjęcia/ustawieniaROS2Subsciber.png Graphic file (type png)
+<use Zdjęcia/ustawieniaROS2Subsciber.png>
+Package pdftex.def Info: Zdjęcia/ustawieniaROS2Subsciber.png  used on input li
+ne 578.
+(pdftex.def)             Requested size: 278.69475pt x 262.15956pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 587--588
+
+ []
+
+[18
+
+ <./Zdjęcia/actionGraph.png>] [19 <./Zdjęcia/ustawieniaMakeArray.png> <./Zdj�
+�cia/kolejnoscJointow.png>] [20 <./Zdjęcia/ustawieniaROS2Subsciber.png>]
+<Zdjęcia/pochyleniePrzod.png, id=305, 1729.46124pt x 838.13126pt>
+File: Zdjęcia/pochyleniePrzod.png Graphic file (type png)
+<use Zdjęcia/pochyleniePrzod.png>
+Package pdftex.def Info: Zdjęcia/pochyleniePrzod.png  used on input line 610.
+(pdftex.def)             Requested size: 445.9133pt x 216.09297pt.
+<Zdjęcia/pochylenieTyl.png, id=306, 1729.46124pt x 838.13126pt>
+File: Zdjęcia/pochylenieTyl.png Graphic file (type png)
+<use Zdjęcia/pochylenieTyl.png>
+Package pdftex.def Info: Zdjęcia/pochylenieTyl.png  used on input line 617.
+(pdftex.def)             Requested size: 445.9133pt x 216.09297pt.
+
+[21
+
+ <./Zdjęcia/pochyleniePrzod.png> <./Zdjęcia/pochylenieTyl.png>]
+<Zdjęcia/oknoZPrzykladami.png, id=317, 1856.9375pt x 1056.94875pt>
+File: Zdjęcia/oknoZPrzykladami.png Graphic file (type png)
+<use Zdjęcia/oknoZPrzykladami.png>
+Package pdftex.def Info: Zdjęcia/oknoZPrzykladami.png  used on input line 639.
+
+(pdftex.def)             Requested size: 445.9133pt x 253.8019pt.
+ [22
+
+ <./Zdjęcia/oknoZPrzykladami.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 646--647
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 662--663
+
+ []
+
+<Zdjęcia/przykladBoston.png, id=326, 673.51625pt x 369.38pt>
+File: Zdjęcia/przykladBoston.png Graphic file (type png)
+<use Zdjęcia/przykladBoston.png>
+Package pdftex.def Info: Zdjęcia/przykladBoston.png  used on input line 674.
+(pdftex.def)             Requested size: 445.9133pt x 244.55807pt.
+<Zdjęcia/przykladHumanoid.png, id=327, 469.755pt x 438.63875pt>
+File: Zdjęcia/przykladHumanoid.png Graphic file (type png)
+<use Zdjęcia/przykladHumanoid.png>
+Package pdftex.def Info: Zdjęcia/przykladHumanoid.png  used on input line 681.
+
+(pdftex.def)             Requested size: 278.69475pt x 260.23363pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Zdjęcia/przykladowaPaletyzacja.png, id=329, 1313.90875pt x 713.66624pt>
 File: Zdjęcia/przykladowaPaletyzacja.png Graphic file (type png)
 <use Zdjęcia/przykladowaPaletyzacja.png>
 Package pdftex.def Info: Zdjęcia/przykladowaPaletyzacja.png  used on input lin
-e 589.
+e 690.
 (pdftex.def)             Requested size: 390.17094pt x 211.92358pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Zdjęcia/czujnikIMU.png, id=235, 1856.9375pt x 1056.94875pt>
+<Zdjęcia/czujnikIMU.png, id=332, 1856.9375pt x 1056.94875pt>
 File: Zdjęcia/czujnikIMU.png Graphic file (type png)
 <use Zdjęcia/czujnikIMU.png>
-Package pdftex.def Info: Zdjęcia/czujnikIMU.png  used on input line 598.
+Package pdftex.def Info: Zdjęcia/czujnikIMU.png  used on input line 699.
 (pdftex.def)             Requested size: 390.17094pt x 222.07867pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Zdjęcia/poruszanieIMU.png, id=236, 1927.2pt x 1084.05pt>
+<Zdjęcia/poruszanieIMU.png, id=333, 1927.2pt x 1084.05pt>
 File: Zdjęcia/poruszanieIMU.png Graphic file (type png)
 <use Zdjęcia/poruszanieIMU.png>
-Package pdftex.def Info: Zdjęcia/poruszanieIMU.png  used on input line 605.
+Package pdftex.def Info: Zdjęcia/poruszanieIMU.png  used on input line 706.
 (pdftex.def)             Requested size: 390.17094pt x 219.4693pt.
-[18 <./Zdjęcia/przykladBoston.png>] [19 <./Zdjęcia/przykladHumanoid.png> <./Z
-djęcia/przykladowaPaletyzacja.png>] [20 <./Zdjęcia/czujnikIMU.png> <./Zdjęci
-a/poruszanieIMU.png>] [21
+[23 <./Zdjęcia/przykladBoston.png>] [24 <./Zdjęcia/przykladHumanoid.png> <./Z
+djęcia/przykladowaPaletyzacja.png>] [25 <./Zdjęcia/czujnikIMU.png> <./Zdjęci
+a/poruszanieIMU.png>] [26
 
 ] (main.aux)
  ***********
@@ -603,21 +761,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D7FB33C6D93B33604C5A340063558EA3;5057.
+(rerunfilecheck)             Checksum: 2B0559CA29937D56FD7976DE79EEA339;7304.
  ) 
 Here is how much of TeX's memory you used:
- 12601 strings out of 474370
- 202632 string characters out of 5741951
- 1936754 words of memory out of 5000000
- 34814 multiletter control sequences out of 15000+600000
+ 12642 strings out of 474370
+ 203377 string characters out of 5741951
+ 1938754 words of memory out of 5000000
+ 34835 multiletter control sequences out of 15000+600000
  568546 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,79p,986b,489s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,79p,999b,561s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt120
-0.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx
-1200.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\t
-crm1200.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecbx1440.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
+0.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1200.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
+cbx1440.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecbx1200.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
 i600\ecbx1728.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
 /dpi600\ecrm1200.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
 /ec/dpi600\ecbx2074.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
@@ -625,9 +783,9 @@ pen/ec/dpi600\ecrm2074.pk><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmmi12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/font
 s/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (21 pages, 7513594 bytes).
+Output written on main.pdf (26 pages, 7588884 bytes).
 PDF statistics:
- 680 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
- 269 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 828 PDF objects out of 1000 (max. 8388607)
+ 80 named destinations out of 1000 (max. 500000)
+ 354 words of extra memory for PDF output out of 10000 (max. 10000000)
 
