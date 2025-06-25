@@ -87,8 +87,19 @@ Celem projektu była instalacja środowiska ISSAC SIM oraz jego odpowiednia konf
 \subsection{Czym jest środowisko ISAAC SIM}
 
 NVIDIA Isaac Sim to zaawansowane środowisko symulacyjne oparte na silniku Omniverse, stworzone z myślą o rozwoju i testowaniu algorytmów dla robotyki. Umożliwia realistyczną symulację fizyki, czujników oraz środowisk 3D, co pozwala na szybkie prototypowanie i walidację systemów autonomicznych bez konieczności fizycznego dostępu do sprzętu.
+
 Symulator ten wspiera modelowanie robotów zgodne z formatem URDF (Unified Robot Description Format) oraz pozwala na integrację z popularnymi bibliotekami takimi jak ROS/ROS2, PyTorch, czy Isaac SDK. Dzięki realistycznemu odwzorowaniu działania sensorów (np. kamer RGB-D, LiDAR, IMU), możliwe jest testowanie algorytmów percepcji, lokalizacji, mapowania, planowania ruchu czy sterowania w warunkach zbliżonych do rzeczywistych.
-Środowisko to odgrywa kluczową rolę w symulacji „cyfrowych bliźniaków” robotów, co znacząco obniża koszty i ryzyko związane z rzeczywistymi testami.
+
+Środowisko to odgrywa kluczową rolę w symulacji „cyfrowych bliźniaków” robotów, co znacząco obniża koszty i ryzyko związane z rzeczywistymi testami. Widok po uruchomieniu środowiska jest przedstawiony na rysunku \ref{srodowiskoISAACSIM}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\linewidth]{Zdjęcia/widokISAACSIM.png}
+    \caption{Środowisko ISAAC SIM}
+    \label{srodowiskoISAACSIM}
+\end{figure}
+
+\clearpage
 
 \subsection{Czym jest środowisko ROS2}
 
@@ -101,9 +112,94 @@ ROS 2 współpracuje z popularnymi narzędziami robotycznymi i symulatorami (np.
 
 \subsection{Czym jest robot Unitree Go2}
 
-Unitree GO2 to zaawansowany, autonomiczny czteronożny robot mobilny (quadruped robot) opracowany przez firmę Unitree Robotics. Został zaprojektowany z myślą o wszechstronnych zastosowaniach w dziedzinach takich jak badania naukowe, eksploracja terenów trudnodostępnych, edukacja, patrolowanie oraz rozwój algorytmów sztucznej inteligencji i percepcji środowiska.
-Robot GO2 jest sterowany za pomocą systemu ROS 2, co umożliwia integrację z istniejącymi narzędziami i frameworkami robotycznymi. Dzięki zastosowaniu silników o wysokim momencie obrotowym i zaawansowanym algorytmom stabilizacji, GO2 potrafi poruszać się stabilnie w zmiennych warunkach terenowych.
+Unitree Go2 EDU to zaawansowany robot mobilny o czterokończynowej konstrukcji, zaprojektowany przez firmę Unitree Robotics – jednego z liderów w dziedzinie robotyki kroczącej. Model ten stanowi wersję edukacyjną (EDU), oferując rozszerzone możliwości programistyczne i integracyjne względem wersji konsumenckiej. Dzięki otwartemu środowisku programowania, rozbudowanemu układowi sensorycznemu oraz dużej mobilności, znajduje zastosowanie w edukacji wyższej, pracach badawczo-rozwojowych, a także w zadaniach inspekcyjnych i eksperymentalnych.
 
+Korpus robota wykonano z lekkich i wytrzymałych materiałów – głównie stopów aluminium i włókien węglowych. Robot porusza się na czterech kończynach o trzech stopniach swobody każda (12 DOF), napędzanych przez wydajne, bezszczotkowe silniki z czujnikami momentu. Taka konfiguracja zapewnia płynny, dynamiczny chód z możliwością dostosowania kroku do zmiennych warunków terenowych, a także wykonywanie złożonych manewrów, takich jak omijanie przeszkód, wchodzenie po schodach czy skoki.
+
+
+W wersji EDU robot wyposażony jest w szereg czujników, umożliwiających percepcję otoczenia i autonomiczne działanie. W skład systemu sensorycznego wchodzą:
+\begin{itemize}
+    \item Kamera głębokości (np. Intel RealSense)
+    \item 9-osiowy IMU (żyroskop + akcelerometr + magnetometr)
+    \item Enkodery położenia i momentu
+    \item LIDAR 2D/3D (opcjonalnie)
+    \item Mikrofony i czujniki dźwięku
+    \item Opcjonalna kamera RGB i termowizyjna
+\end{itemize}
+
+Sercem systemu sterowania jest minikomputer klasy NVIDIA Jetson Orin lub komputer przemysłowy z systemem Linux Ubuntu, z preinstalowanym środowiskiem ROS 2 (Robot Operating System). Umożliwia to rozwój własnych algorytmów z zakresu SLAM, autonomicznej nawigacji, rozpoznawania obiektów, oraz komunikacji człowiek–robot.
+
+
+Robot może być sterowany na trzy sposoby:
+\begin{itemize}
+    \item Zdalnie, za pomocą dedykowanego kontrolera lub aplikacji mobilnej.
+    \item Z poziomu komputera, przez połączenie Wi-Fi, Bluetooth lub Ethernet.
+    \item Autonomicznie, poprzez zaprogramowane algorytmy w ROS 2.
+\end{itemize}
+Do dyspozycji użytkownika oddano interfejsy API w językach Python i C++, umożliwiające pełne sterowanie ruchem, przetwarzaniem danych z czujników i integracją z dodatkowymi modułami.
+
+Unitree Go2 EDU znajduje zastosowanie w szerokim zakresie dziedzin technicznych i naukowych, w tym:
+\begin{itemize}
+    \item Robotyka mobilna i biomechanika – modelowanie ruchu, optymalizacja lokomocji, analiza chodu
+    \item Nawigacja autonomiczna i SLAM – mapowanie środowiska i eksploracja przestrzeni
+    \item Widzenie maszynowe i sztuczna inteligencja – rozpoznawanie gestów, twarzy, przeszkód
+    \item Przemysł i inspekcja – patrolowanie zakładów przemysłowych, kontrola infrastruktury technicznej
+    \item Działania ratunkowe i wojskowe – misje w środowiskach nieprzyjaznych człowiekowi (gruzowiska, strefy skażone)
+    \item Edukacja i dydaktyka – nauczanie sterowania, analizy danych sensorycznych, projektowania systemów embedded
+\end{itemize}
+
+
+Specyfikacja techniczna:
+\begin{itemize}
+    \item \textbf{Wymiary (wysokość x szerokość x długość)}: 70x31x40 cm (pozycja stojąca), 76x31x20 cm (pozycja kucająca)
+    \item \textbf{Waga (z baterią)}: Około 15 kg
+    \item \textbf{Materiał}: Stop aluminium + wysoka wytrzymałość plastiku inżynierskiego
+    \item \textbf{Napięcie robocze}: 28V\~33.6V
+    \item \textbf{Moc szczytowa}: Około 3000W
+    \item \textbf{Udźwig}: Około 8 kg (maks. 12 kg)
+    \item \textbf{Prędkość}: 0 $\sim$ 3.7 m/s (maks. 5 m/s)
+    \item \textbf{Maksymalna wysokość podjazdu}: Około 16 cm
+    \item \textbf{Kąt wspinania}: 40°
+    \item \textbf{Maksymalny moment obrotowy}: Około 45 N·m
+    \item \textbf{Liczba stawów motorycznych}: 12 zestawów
+    \item \textbf{Zakres ruchu}: Ciało: -48° $\sim$ 48°, Udo: -200° $\sim$ 90°, Goleni: -156° $\sim$ -48°
+    \item \textbf{Bateria}: Standardowa 8000 mAh, długowieczna 15000 mAh
+    \item \textbf{Czas pracy}: Około 2–4 godziny
+    \item \textbf{Ładowanie}: Szybkie ładowanie (33.6V 9A)
+    \item \textbf{Procesor}: Nvidia Jetson Orin (opcjonalny)
+    \item \textbf{Łączność}: Wi-Fi 6 (Dual-band), Bluetooth 5.2
+    \item \textbf{Bateria}: Inteligentna bateria, zabezpieczona przed przegrzaniem, przeciążeniem oraz zwarciem
+    \item \textbf{Inne cechy}: Głośnik do odtwarzania muzyki
+\end{itemize}
+
+
+Funkcje i urządzenia robota:
+\begin{itemize}
+    \item Moduł śledzenia: Zdalne sterowanie lub automatyczne śledzenie obiektów
+    \item Mikrofon interkomowy: Umożliwia komunikację z robotem bez ograniczeń scenariuszowych
+    \item Kamery i sensory:
+    \begin{itemize}
+        \item Kamera przednia: Transmisja obrazu w rozdzielczości 1280x720, pole widzenia 120°, szeroki kąt widzenia
+        \item LIDAR 4D L1: Skanning 360° w zakresie 90°, omijanie przeszkód z minimalnymi martwymi strefami
+    \end{itemize}
+    \item Motory precyzyjnych stawów: 12 silników z aluminium zapewnia mocne, precyzyjne ruchy
+    \item Czujniki siły w stopach: Monitorowanie sił działających na nogi robota w czasie rzeczywistym, co pozwala na dynamiczną adaptację do terenu
+    \item Przenośny pasek samonawijający: Umożliwia łatwe przenoszenie robota oraz załadunek
+    \item Głośnik do odtwarzania muzyki: Odtwarzanie muzyki lub dźwięków w trakcie pracy robota
+\end{itemize}
+
+
+Unitree Go2 EDU to wyjątkowe narzędzie dydaktyczne i badawcze, umożliwiające eksperymentowanie z nowoczesnymi technikami robotyki mobilnej, widzenia komputerowego oraz sztucznej inteligencji. Dzięki swojej modułowości, wszechstronności i kompatybilności z ROS 2, robot ten jest szczególnie ceniony przez uczelnie techniczne, laboratoria R\&D oraz przemysł innowacyjny.
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\linewidth]{Zdjęcia/prawdziwyPies.jpg}
+    \caption{Przedstawia robota Unitree Go2.}
+    \label{prawdziwyPies}
+\end{figure}
+
+\clearpage
 
 \section{Instalacja i konfiguracja środowiska ISSAC SIM oraz ROS2}
 
@@ -241,14 +337,14 @@ W środowisku ISSAC SIM znajduje się gotowy model cyfrowego bliźniaka robota U
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.7\linewidth]{Zdjęcia/cyfrowyBlizniakUnitryGo2.png}
+    \includegraphics[width=0.75\linewidth]{Zdjęcia/cyfrowyBlizniakUnitryGo2.png}
     \caption{Cyfrowy bliźniak robota Unitree Go2 w środowisku ISAAC SIM.}
     \label{fig:cyfrowyBlizniak}
 \end{figure}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.7\linewidth]{Zdjęcia/groundPlane.png}
+    \includegraphics[width=0.9\linewidth]{Zdjęcia/groundPlane.png}
     \caption{Dodanie podłoża w ISSAC SIM.}
     \label{fig:groundPlane}
 \end{figure}
@@ -266,7 +362,7 @@ https://drive.google.com/drive/folders/1fdtBgbXUCxln3wdQgWUAGIBdBf-2Qv9z
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\linewidth]{Zdjęcia/dodanieActionGraph.png}
+    \includegraphics[width=0.7\linewidth]{Zdjęcia/dodanieActionGraph.png}
     \caption{Dodanie Action Graph do cyfrowego bliźniaka Unitree Go2}
     \label{fig:jakDodacAction}
 \end{figure}
@@ -281,14 +377,21 @@ https://drive.google.com/drive/folders/1fdtBgbXUCxln3wdQgWUAGIBdBf-2Qv9z
 \end{figure}
 
 
-Blok On Playback Tick uruchamia się w każdej klatce symulacji i pozwala na wykonywanie się pozostałych bloków synchronicznie. Blok ROS2 Context inicjalizuję ROS2 w środowisku ISAAC SIM. Articulation Controller służy do przekazywania danych do poszczególnych członów robota. W bloku Make Array należy wstawić poszczególne nazwy członów robota, nazwy te można odczytać z obiektu robota go2. Blok Make Array przekazuje nazwy do bloku Articulation Controller po to żeby wiadomo było jakie człony mają być wysterowane na jaką wartość. Wstawione nazwy członów w bloku Make Array zostały pokazane na rysunku \ref{fig:makeArray} ważne jest żeby kolejność nazw członów była taka sama jak na rysunku ze względu na fakt, że w takiej kolejności są odbierane z bloku ROS2Subscribe.
+Blok On Playback Tick uruchamia się w każdej klatce symulacji i pozwala na wykonywanie się pozostałych bloków synchronicznie. Blok ROS2 Context inicjalizuję ROS2 w środowisku ISAAC SIM. Articulation Controller służy do przekazywania danych do poszczególnych członów robota. W bloku Make Array należy wstawić poszczególne nazwy członów robota, nazwy te można odczytać z obiektu robota go2. Blok Make Array przekazuje nazwy do bloku Articulation Controller po to żeby wiadomo było jakie człony mają być wysterowane na jaką wartość. Wstawione nazwy członów w bloku Make Array zostały pokazane na rysunku \ref{fig:makeArray} ważne jest żeby kolejność nazw członów była taka sama jak na rysunku, ze względu na fakt, że w takiej kolejności są odbierane z bloku ROS2Subscribe. Kolejność członów w bloku Make Array musi zgadzać się z kolejnością członów w kodzie przedstawioną na rysunku \ref{kolejnoscJointow}
 
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\linewidth]{Zdjęcia/ustawieniaMakeArray.png}
-    \caption{Ustawienia bloku Make Array}
+    \caption{Ustawienia bloku Make Array.}
     \label{fig:makeArray}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{Zdjęcia/kolejnoscJointow.png}
+    \caption{Kolejność członów w kodzie.}
+    \label{kolejnoscJointow}
 \end{figure}
 
 Blok ROS2Subscriber służy do otrzymywania danych z programu środowiska ROS2, tak zwanego subskrybowania danych, na rysunku \ref{fig:subscriberROS2} pokazano jak poprawnie skonfigurować blok ROS2Subscriber żeby dane były odpowiednio pobierane. Otrzymane dane są przesyłane do bloku Articulation Controller.
@@ -296,11 +399,13 @@ Blok ROS2Subscriber służy do otrzymywania danych z programu środowiska ROS2, 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\linewidth]{Zdjęcia/ustawieniaROS2Subsciber.png}
-    \caption{Ustawienia bloku ROS2 Subscriber}
+    \caption{Ustawienia bloku ROS2 Subscriber.}
     \label{fig:subscriberROS2}
 \end{figure}
 
-W celu uruchomienia programu sterującego, po wcześniejszym wypakowaniu potrzebnych plików,  należy przejść do folderu $/quadruped\_robot\_ROS2$ i w terminalu wpisać (żeby uruchomić terminal w danym folderze należy będąc w aplikacji pliki w danym folderze wcisnąć prawy przycisk myszy i ‘otwórz w terminalu’):
+
+
+W celu uruchomienia programu sterującego, po wcześniejszym wypakowaniu potrzebnych plików,  należy przejść do folderu $/quadruped\_robot\_ROS2$ i w terminalu wpisać (żeby uruchomić terminal w danym folderze, należy, będąc w aplikacji pliki w danym folderze, wcisnąć prawy przycisk myszy i ‘otwórz w terminalu’):
 
 $colcon\; build$
 
@@ -322,14 +427,14 @@ Na rysunku \ref{fig:pochyleniePrzod} oraz na rysunku \ref{fig:pochylenieTyl} wid
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.75\linewidth]{Zdjęcia/pochyleniePrzod.png}
+    \includegraphics[width=0.8\linewidth]{Zdjęcia/pochyleniePrzod.png}
     \caption{Robot Unitree Go2 pochylający się do przodu.}
     \label{fig:pochyleniePrzod}
 \end{figure}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.75\linewidth]{Zdjęcia/pochylenieTyl.png}
+    \includegraphics[width=0.8\linewidth]{Zdjęcia/pochylenieTyl.png}
     \caption{Robot Unitree Go2 pochylający się do tyłu.}
     \label{fig:pochylenieTyl}
 \end{figure}
@@ -435,8 +540,33 @@ W dolnej części programu otwiera się zakładka Robotics Examples, w której z
     \label{fig:symulacje}
 \end{figure}
 
-Na rysunku \ref{fig:bostonDyna} przedstawiony jest widok na cyfrowego bliźniaka firmy Boston Dynamics. W przykładowej symulacji jest możliwe sterowanie nim przy pomocy strzałek i przycisków klawiatury. Podobnie na rysunku \ref{fig:humanoid} pokazany jest humanoidalny robot firmy Unitree nim, również możliwe jest sterowanie w dostępnej przykładowej symulacji.
+\newpage
 
+Na rysunku \ref{fig:bostonDyna} przedstawiony jest widok na cyfrowego bliźniaka firmy Boston Dynamics. W przykładowej symulacji jest możliwe sterowanie nim przy pomocy strzałek i przycisków klawiatury. Sterowanie odbywa się przy pomocy następujących klawiszy: 
+
+\texttt{Klawisz  Działanie}
+
+\texttt{Strzałka w górę/numpad 8  Idź do przodu}
+
+\texttt{Strzałka w dół/numpad 2  Idź do tyłu}
+
+\texttt{Lewa strzałka/numpad 4  Idź w lewo}
+
+\texttt{Prawa strzałka/numpad 6  Idź w prawo}
+
+\texttt{N/numpad 7  Kręć się przeciwnie do ruchu wskazówek zegara}
+
+\texttt{M/numpad 9 Kręć się zgodnie z ruchem wskazówek zegara}
+
+Rysunek \ref{fig:humanoid} pokazuje humanoidalnego robota firmy Unitree, którym również możliwe jest sterowanie w~ dostępnej przykładowej symulacji. Sterowanie odbywa się przy pomocy:
+
+\texttt{Klawisz  Działanie}
+
+\texttt{Strzałka w górę/numpad 8  Idź do przodu}
+
+\texttt{Strzałka w lewo/numpad 4 Kręć się przeciwnie do ruchu wskazówek zegara}
+
+\texttt{Strzałka w prawo/numpad 6 Kręć się zgodnie z ruchem wskazówek zegara}
 
 \begin{figure}[h]
     \centering
@@ -461,13 +591,20 @@ W środowisku ISAAC SIM dostępny jest też przykład z manipulatorem układają
     \label{fig:palety}
 \end{figure}
 
-Na rysunku \ref{IMU} przedstawiony jest przykład z czujnikiem IMU gdzie możliwe jest poruszanie obiektem i obserwowanie zmian wartości zwracanych przez czujnik IMU.
+Na rysunku \ref{IMU} przedstawiony jest przykład z czujnikiem IMU gdzie możliwe jest poruszanie obiektem i~ obserwowanie zmian wartości zwracanych przez czujnik IMU. Rysunek \ref{ruchIMU} pokazuje jak poruszanie obiektem wpływa na zmianę wartości mierzonych przez czujnik IMU. Sterowanie odbywa się poprzez jednoczesne wciśnięcie shift oraz lewego przycisku myszy na obiekcie pozwala to na poruszanie nim przez ruchy myszki.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\linewidth]{Zdjęcia/czujnikIMU.png}
     \caption{Przykład z ISAAC SIM z czujnikiem IMU.}
     \label{IMU}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{Zdjęcia/poruszanieIMU.png}
+    \caption{Przykład z ISAAC SIM z czujnikiem IMU i poruszaniem obiektem.}
+    \label{ruchIMU}
 \end{figure}
 
 \clearpage
@@ -492,7 +629,8 @@ Do propozycji dalszego rozwoju należą:
 \begin{itemize}
     \item Poprawa algorytmu sterującego cyforwym bliźniakiem robota Unitree Go2 lub napisanie całego algorytmu od nowa
     \item Sterowanie cyfrowym bliźniakiem innego robota przy pomocy ROS2
-    \item Stworzenie własnego modelu URDF robota i sterowanie nim w środowisku ISAAC SIM   
+    \item Stworzenie własnego modelu URDF robota i sterowanie nim w środowisku ISAAC SIM
+    \item Dodanie czujników do cyfrowego bliźniaka robota Unitree Go2
 \end{itemize}
 
 \end{document}
